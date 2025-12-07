@@ -6,5 +6,6 @@
     # Apps
     zsh
     kitty
+    starship
   ];
 }

@@ -7,9 +7,11 @@
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+
   };
 
-  outputs = { self, nixpkgs, home-manager,... }:
+  outputs = { self, nixpkgs, home-manager, spicetify-nix, ... }:
     let
         system = "x86_64-linux";
         pkgs = import nixpkgs {
@@ -26,7 +28,9 @@
       homeConfigurations."symbiontz" = home-manager.lib.homeManagerConfiguration
       {
         inherit pkgs;
+        extraSpecialArgs = { inherit spicetify-nix; };
         modules = [
+          spicetify-nix.homeManagerModules.default
           ./modules/custom/home-manager.nix
           ./modules/custom/app-config.nix
           ./modules/custom/alias.nix

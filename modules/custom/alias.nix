@@ -13,6 +13,7 @@
       "..." = "cd ../..";
       ll = "ls -la";
       la = "ls -A";
+      lookdotfiles = "code /home/.dotfiles";
       
       # Git
       gs = "git status";
