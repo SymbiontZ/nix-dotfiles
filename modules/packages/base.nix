@@ -7,5 +7,6 @@
     zsh
     kitty
     starship
+    ranger
   ];
 }

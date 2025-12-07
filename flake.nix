@@ -18,6 +18,7 @@
           inherit system;
           config.allowUnfree = true;
         };
+        spicetifyPkgs = spicetify-nix.legacyPackages.${system};
     in {
       nixosConfigurations.symbiontz = nixpkgs.lib.nixosSystem {
         inherit system;
@@ -31,9 +32,7 @@
         extraSpecialArgs = { inherit spicetify-nix; };
         modules = [
           spicetify-nix.homeManagerModules.default
-          ./modules/custom/home-manager.nix
-          ./modules/custom/app-config.nix
-          ./modules/custom/alias.nix
+          ./modules/home/default.nix
         ];
       };
     };

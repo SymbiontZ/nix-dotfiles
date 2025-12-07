@@ -6,6 +6,10 @@
     # Apps
     git
     vscode
+    docker
+
+    lazygit
+    lazydocker
 
     # Libs
     python312
