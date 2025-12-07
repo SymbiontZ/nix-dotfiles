@@ -29,7 +29,10 @@
       homeConfigurations."symbiontz" = home-manager.lib.homeManagerConfiguration
       {
         inherit pkgs;
-        extraSpecialArgs = { inherit spicetify-nix; };
+        extraSpecialArgs = { 
+          inherit spicetify-nix; 
+          spicePkgs = spicetify-nix.legacyPackages.${system};
+        };
         modules = [
           spicetify-nix.homeManagerModules.default
           ./home/default.nix
