@@ -24,8 +24,8 @@
       {
         inherit pkgs;
         modules = [
-          ./modules/system/home-manager.nix
-          ./modules/system/app-config.nix
+          ./modules/custom/home-manager.nix
+          ./modules/custom/app-config.nix
         ];
       };
     };

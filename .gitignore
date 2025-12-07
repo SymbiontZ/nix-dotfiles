@@ -1,0 +1,25 @@
+# Nix build outputs
+result
+result-*
+
+# Nix garbage collection roots
+.nix-gc-roots
+
+# direnv
+.direnv/
+.envrc
+
+# Editor backups
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Secrets (nunca subir)
+secrets/
+*.age
+*.gpg
