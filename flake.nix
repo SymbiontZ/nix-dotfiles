@@ -32,7 +32,7 @@
         extraSpecialArgs = { inherit spicetify-nix; };
         modules = [
           spicetify-nix.homeManagerModules.default
-          ./modules/home/default.nix
+          ./home/default.nix
         ];
       };
     };
