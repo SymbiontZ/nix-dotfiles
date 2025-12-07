@@ -12,5 +12,6 @@
     # Packages
     ./packages/dev.nix
     ./packages/dev-extensions.nix
+    ./packages/base.nix
   ];
 }

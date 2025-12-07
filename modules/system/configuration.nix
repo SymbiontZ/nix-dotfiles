@@ -31,9 +31,11 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "es_ES.UTF-8";
+  
   users.users.symbiontz = {
     isNormalUser = true;
     extraGroups = ["wheel" "networkmanager" "audio" "video" ];
+    shell = pkgs.zsh;
   };
   nixpkgs.config.allowUnfree = true;
 

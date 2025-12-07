@@ -4,13 +4,7 @@
   environment.systemPackages = with pkgs; [
 
     # Apps
-    git
-    vscode
-
-    # Libs
-    python312
-    nodejs_24
-    php
-
+    zsh
+    kitty
   ];
 }
