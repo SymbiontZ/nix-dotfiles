@@ -29,6 +29,7 @@
         modules = [
           ./modules/custom/home-manager.nix
           ./modules/custom/app-config.nix
+          ./modules/custom/alias.nix
         ];
       };
     };

@@ -39,4 +39,28 @@
             };
         };
     };
+
+    # Zsh
+    programs.zsh = {
+        enable = true;
+        
+        # Historial
+        history = {
+            size = 10000;
+            save = 10000;
+            ignoreDups = true;
+            ignoreSpace = true;
+        };
+        
+        # Opciones de autocompletado
+        enableCompletion = true;
+        autosuggestion.enable = true;
+        syntaxHighlighting.enable = true;
+        
+        # Configuración inicial
+        initContent = ''
+            # Prompt básico (puedes personalizarlo o usar starship)
+            PROMPT='%F{cyan}%n@%m%f:%F{blue}%~%f$ '
+        '';
+    };
 }
