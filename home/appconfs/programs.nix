@@ -33,40 +33,6 @@
         syntaxHighlighting.enable = true;
     };
 
-    # Starship prompt
-    programs.starship = {
-        enable = true;
-        enableZshIntegration = true;
-        settings = {
-            # Formato del prompt
-            format = "$username$hostname$directory$git_branch$git_status$cmd_duration$line_break$character";
-            
-            character = {
-                success_symbol = "[❯](bold green)";
-                error_symbol = "[❯](bold red)";
-            };
-            
-            directory = {
-                truncation_length = 3;
-                truncate_to_repo = true;
-            };
-            
-            git_branch = {
-                symbol = " ";
-                style = "bold purple";
-            };
-            
-            git_status = {
-                style = "bold red";
-            };
-            
-            cmd_duration = {
-                min_time = 500;
-                format = "[$duration](bold yellow) ";
-            };
-        };
-    };
-
     # Spicetify (Spotify personalizado)
     programs.spicetify = {
         enable = true;

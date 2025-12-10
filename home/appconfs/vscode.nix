@@ -9,6 +9,7 @@
                 github.copilot-chat
 
                 bbenoist.nix
+                naumovs.color-highlight
                 
                 pkief.material-icon-theme
                 pkief.material-product-icons
